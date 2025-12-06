@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4f46e5;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .service h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #4338ca;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>I help people with web development, design, and tutoring 🚀</p>
+  </header>
+
+  <section>
+    <h2>💼 My Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>🌐 Web Development</h3>
+        <p>I build responsive websites using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service">
+        <h3>🎨 Graphic Design</h3>
+        <p>Custom logos, posters, and graphics tailored for your brand.</p>
+      </div>
+      <div class="service">
+        <h3>📘 Tutoring</h3>
+        <p>Learn HTML, CSS, and JavaScript step by step in private sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📩 Contact Me</h2>
+    <p>Fill out this form and I'll get back to you:</p>
+
+    <!-- Replace "yourformid" with your Formspree ID -->
+    <form action="https://formspree.io/f/mandllzy" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>💳 Quick Payment</h2>
+    <p>You can pay me directly via PayPal:</p>
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="yourpaypal@email.com">
+      <input type="submit" value="Pay with PayPal">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name | Built with ❤️ on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
